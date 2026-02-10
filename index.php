@@ -26,7 +26,7 @@ foreach ($array2 as $Valor) {
 }
 
 // Ejercicio 3:
-$array3 = ["hola", "php", "html, hospital, hotel, huskie"]; 
+$array3 = ["hola", "php", "html", "hospital", "hotel", "huskie"];
 
 function todasContienen($palabras, $caracter) {
     foreach($palabras as $palabra) {
@@ -43,5 +43,16 @@ echo "<br>";
 echo todasContienen($array3, "l") ? "true" : "false";
 
 
+//ejercicio 4
+$datosPersonales = [
+    "nombre" => "Carol Desireé",
+    "edad" => 33,
+    "email" => "desireecarol@gmail.com",
+    "comida_favorita"=> "Pozole"];
+
+foreach( $datosPersonales as $clave => $valor ) {
+echo $clave.": " . $valor . "<br>";
+
+}
 
 ?>
